@@ -8,11 +8,14 @@
   "license": "ISC",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel *.html",
-    "build": "parcel build"
+    "dev": "gulp serve"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-live-server": "0.0.31",
+    "gulp-sass": "^5.0.0",
     "parcel": "^2.0.1"
   }
 }

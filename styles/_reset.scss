@@ -3,12 +3,17 @@
   --clr-secondary: #BB2528;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 html,
 body,
 ul,
 ol {
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
 h1,h2,h3,h4,h5{
