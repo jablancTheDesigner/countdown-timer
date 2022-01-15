@@ -12,10 +12,15 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
+    "autoprefixer": "^10.4.0",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-live-server": "0.0.31",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.0.0",
-    "parcel": "^2.0.1"
+    "gulp-sourcemaps": "^3.0.0",
+    "parcel": "^2.0.1",
+    "postcss-nested": "^5.0.6"
   }
 }

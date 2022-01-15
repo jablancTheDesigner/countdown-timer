@@ -1,26 +1,54 @@
 .countdown-timer {
-        display: grid;
+        display: flex;
         min-height: 100vh;
-        min-width: 100vw;
         align-content: center;
         justify-content: space-around;
+
+    &__inner{
+        width: 100%;
+        max-width: 720px;
+        margin: auto 0;
+        @media screen and (max-width: 1024px) {
+            max-width: 480px;
+        }
+    }
     &__title{
         display: block;
         text-align: center;
         font-size: 3rem;
+        padding: 0 1rem;
+        @media screen and (max-width: 768px) {
+          
+        }
     }
     &__wrapper {
         display: flex;
-        width: 720px;
+        width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__el {
         padding: 1rem;
         text-align: center;
         margin: 0 1rem;
+        text-shadow: 22px 21px 4px rgba(0, 0, 0, 0.35);
+        p{
+            font-size: 1rem;
+            margin: 0;
+        }
+        @media screen and (max-width: 1024px) {
+            flex: 50%;
+            margin: 0;
+        }
+       
     }
     &__number{
         font-size: 5rem;
         transition: all 350ms ease-in;
+        margin-bottom: 0;
+        @media screen and (max-width: 1024px) {
+            font-size: 3rem;
+        }
     }
+
 }

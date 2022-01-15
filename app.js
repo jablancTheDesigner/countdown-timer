@@ -3,7 +3,7 @@ const counter = setInterval(() => {
 }, 1000)
 
 function countDownTimer() {
-    const toDateStr = "12/25/2021";
+    const toDateStr = "07/26/2022";
     const toDate = new Date(toDateStr).getTime()
     const now = new Date().getTime();
     const diff = toDate - now

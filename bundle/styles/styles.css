@@ -1,6 +1,5 @@
 :root {
-  --clr-primary: #165B33;
-  --clr-secondary: #BB2528;
+  --clr-primary: #2a2a72;
 }
 
 * {
@@ -22,32 +21,61 @@ h1, h2, h3, h4, h5 {
 
 body {
   margin: 0;
-  background-color: var(--clr-primary);
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
 }
 
 .countdown-timer {
-  display: grid;
+  display: flex;
   min-height: 100vh;
-  min-width: 100vw;
   align-content: center;
   justify-content: space-around;
+}
+.countdown-timer__inner {
+  width: 100%;
+  max-width: 720px;
+  margin: auto 0;
+}
+@media screen and (max-width: 1024px) {
+  .countdown-timer__inner {
+    max-width: 480px;
+  }
 }
 .countdown-timer__title {
   display: block;
   text-align: center;
   font-size: 3rem;
+  padding: 0 1rem;
 }
 .countdown-timer__wrapper {
   display: flex;
-  width: 720px;
+  width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .countdown-timer__el {
   padding: 1rem;
   text-align: center;
   margin: 0 1rem;
+  text-shadow: 22px 21px 4px rgba(0, 0, 0, 0.35);
+}
+.countdown-timer__el p {
+  font-size: 1rem;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .countdown-timer__el {
+    flex: 50%;
+    margin: 0;
+  }
 }
 .countdown-timer__number {
   font-size: 5rem;
   transition: all 350ms ease-in;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+  .countdown-timer__number {
+    font-size: 3rem;
+  }
 }
